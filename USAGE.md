@@ -21,7 +21,7 @@
 - Find `LibTorchPlugin` and click `Enable`
 
 
-![](Images/plugin_icon.jpg)
+![](Images/plugin.jpg)
 
 
 ## Run Test Scene
