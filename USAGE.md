@@ -10,13 +10,20 @@
 
 ## Project Setup
 
+#### New Project
 - Make a C++ Unreal Project 
 - Make sure you have a `Plugins` folder inside of the project
+
+#### Compile
 - Clone this Repo into the plugins folder (Or download the zip file and unzip there)
-- Follow [directions](https://github.com/NeuralVFX/basic-libtorch-dll ) to compile `export_wrapper.dll` and place into the main plugin directory (ie:`Plugins/basic-unreal-libtorch-plugin`)
-- Copy `LibTorch` and `OpenCV` `DLLs` into the plugin's `Binaries` folder (ie:`Plugins/basic-unreal-libtorch-plugin/Binaries/Win64`)
 - Right click your `.uproject` file and click `Generate Visual Studio Project Files`
 - Compile the project from Visual Studio
+
+#### DLLs
+- Follow [directions](https://github.com/NeuralVFX/basic-libtorch-dll ) to compile `export_wrapper.dll` and place into the main plugin directory (ie:`Plugins/basic-unreal-libtorch-plugin`)
+- Copy `LibTorch` and `OpenCV` `DLLs` into the plugin's `Binaries` folder (ie:`Plugins/basic-unreal-libtorch-plugin/Binaries/Win64`)
+
+#### Find Plugin
 - From `Edit->Plugins`, locate the `Installed` Tab
 - Find `LibTorchPlugin` and click `Enable`
 
