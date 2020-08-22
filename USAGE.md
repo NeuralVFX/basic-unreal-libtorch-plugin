@@ -35,10 +35,13 @@
 
 - In the Content Manager, navigate to `LibTorchPlugin C++ Classes->LibTorchPlugin->Public`
 - Click on `LibTorchViewer` and drag this into your scene file
+![](Images/viewer.jpg)
 - Open `Settings->Project` and find `GameInstanceClass`, replace this with `cDataStorageGameInstance`
+![](Images/project_settings.jpg)
+
 - Play the level, and you should see the Style Transfer on the `LibTorchViewer` object
 
-![](Images/viewer.jpg)
+
 
 ## ODSCamera Attributes
 
