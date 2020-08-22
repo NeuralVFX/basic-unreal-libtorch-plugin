@@ -51,33 +51,19 @@
 
 ![](Images/project_settings.jpg)
 
+## Classes
+
+### LibTorchViewer - Actor Class
+- Actor Class which displays LibTorch output as a texture
+- Tick retrieves(by querying the `GameInstance`) and updates texture every frame
 
 
+### cDataStoageWrapper - Object Class
+- Wrapper for `export_wrapper.dll`
+- Finds and initiates `DLL`
+- Exposes functions of `DLL`
 
-
-## ODSCamera Attributes
-
-### Frame Range
-```
---Start Frame, default=100, type=int                           # Frame to start capturing from
---End Frame, default=105, type=int                             # Frame to end capturing
---Current Frame, default=0, type=int                           # Current frame in Sequencer, used during capture
-```
-### Output Settings
-```
---Out Resolution Width, default=4096, type=int                 # Width of final output, height will be half this value (Written into PTStitcher TXT file)
---Snip Resolution, default=720, type=int                       # Width and height used for each snapshot
---Snip FOV, default=50.0, type=float                           # Camera FOV for each snaphot, should be wider than "Angle Increment"
---Angle Increment, default=36.0, type=float                    # Rotation between each snapshot
---Output Dir, default='C:/Output/', type=str                   # Output directory for images and TXT files
---Output Name, default='Render Test', type=str                 # File prefix for all output files
-```
-### Stereo Settings
-```
---Interocular Distance, default=6.2, type=float                # Distance between the left and right eye
---Interocular Verticle Fade, default=false, type=bool          # Whether to decrease the Interoclar Distance at top and bottom of frame (Reduces twist artifact)
-```
-### Sequencer
-```
---Level Sequencer, default=None, type=LevelSequencer           # Which Level Sequencer to play, also fixed framerate is set based on this
-```
+### UDataStorageGameInstance - GameInstance Class
+- This is a wrapper for `cDataStoageWrapper`
+- Manages starting and stoping `OpenCV` based on game state 
+- Retrieves `LibTorch` output, to pass on to `LibTorchViewer `
