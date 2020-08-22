@@ -5,8 +5,8 @@ A "Hello World" for running LibTorch inside Unreal Engine.
 
 ## About
 This is one of two repositories which are required to build this project:
-- [facial-pose-estimation-pytorch](https://github.com/NeuralVFX/basic-unreal-libtorch-plugin) - You are here.
-- [facial-pose-estimation-opencv](https://github.com/NeuralVFX/basic-libtorch-dll)
+- [basic-unreal-libtorch-pluginh](https://github.com/NeuralVFX/basic-unreal-libtorch-plugin) - You are here.
+- [basic-libtorch-dll](https://github.com/NeuralVFX/basic-libtorch-dll)
 
 
 ## Extra Info
