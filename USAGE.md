@@ -55,8 +55,8 @@
 
 ### LibTorchViewer - Actor Class
 - Actor Class which displays LibTorch output as a texture
-- Tick retrieves(by querying the `GameInstance`) and updates texture every frame
-
+- On every tick, this retrieves and updates texture
+- Texture is queried from `UDataStorageGameInstance`
 
 ### cDataStoageWrapper - Object Class
 - Wrapper for `export_wrapper.dll`
