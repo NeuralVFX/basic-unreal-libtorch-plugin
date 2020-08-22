@@ -5,7 +5,7 @@ A `"Hello World"` for running `LibTorch` inside `Unreal Engine`.
 
 ## About
 This is one of two repositories which are required to build this project:
-- [basic-unreal-libtorch-pluginh](https://github.com/NeuralVFX/basic-unreal-libtorch-plugin) - You are here.
+- [basic-unreal-libtorch-plugin](https://github.com/NeuralVFX/basic-unreal-libtorch-plugin) - You are here.
 - [basic-libtorch-dll](https://github.com/NeuralVFX/basic-libtorch-dll)
 
 
