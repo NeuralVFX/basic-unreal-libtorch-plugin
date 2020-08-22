@@ -24,6 +24,7 @@
 - Copy `LibTorch` and `OpenCV` `DLLs` into the plugin's `Binaries` folder (ie:`Plugins/basic-unreal-libtorch-plugin/Binaries/Win64`)
 
 #### Find Plugin
+- Open the compiled project in Unreal Engine
 - From `Edit->Plugins`, locate the `Installed` Tab
 - Find `LibTorchPlugin` and click `Enable`
 
