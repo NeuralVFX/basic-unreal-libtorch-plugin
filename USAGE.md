@@ -2,7 +2,7 @@
 # Getting Started
 
 ## Requirements:
-- UnrealEngine 4.20.3
+- Unreal Engine 4.20.3
 - Visual Studio
 - OpenCV 4.1
 - LibTorch 1.5 (CPU)
@@ -34,6 +34,7 @@
 ## Run Test Scene
 
 - In the Content Manager, navigate to `LibTorchPlugin Content->LibTorchTestLevel` and open this level
+- Open `Settings->Project` and find `GameInstanceClass`, replace this with `cDataStorageGameInstance`
 - Play the level, and you should see the Style Transfer on the `LibTorchViewer` object
 
 ![](Images/level.jpg)
@@ -67,3 +68,13 @@
 - This is a wrapper for `cDataStoageWrapper`
 - Manages starting and stoping `OpenCV` based on game state 
 - Retrieves `LibTorch` output, to pass on to `LibTorchViewer `
+
+## Content
+
+### LibTorchMaterial - Material
+- A Material for displaying LibTorch output
+- Has a `Parameter` called `LibTorchInput`, used to locate the texture of this material from the `LibTorchViewer` class in C++
+- This Material is assigned by default to the `LibTorchViewer` Actor on creation
+
+### LibTorchTestLevel - Level
+- A simple example level containing a `LibTorchViewer`
