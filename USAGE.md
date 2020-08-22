@@ -20,7 +20,6 @@
 - From `Edit->Plugins`, locate the `Installed` Tab
 - Find `LibTorchPlugin` and click `Enable`
 
-
 ![](Images/plugin_a.jpg)
 
 
@@ -28,6 +27,7 @@
 
 - In the Content Manager, navigate to `LibTorchPlugin Content->LibTorchTestLevel` and open this level
 - Play the level, and you should see the Style Transfer on the `LibTorchViewer` object
+
 ![](Images/level.jpg)
 
 
@@ -37,6 +37,7 @@
 - Click on `LibTorchViewer` and drag this into your scene file
 - Open `Settings->Project` and find `GameInstanceClass`, replace this with `cDataStorageGameInstance`
 - Play the level, and you should see the Style Transfer on the `LibTorchViewer` object
+
 ![](Images/viewer.jpg)
 
 ## ODSCamera Attributes
