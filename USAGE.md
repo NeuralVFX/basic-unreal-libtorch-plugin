@@ -35,12 +35,12 @@
 
 - In the Content Manager, navigate to `LibTorchPlugin Content->LibTorchTestLevel` and open this level
 
-![](Images/project_settings.jpg)
+![](Images/level.jpg)
 
 - Open `Settings->Project` and find `GameInstanceClass`, replace this with `cDataStorageGameInstance`
 - Play the level, and you should see the Style Transfer on the `LibTorchViewer` object
 
-![](Images/level.jpg)
+![](Images/project_settings.jpg)
 
 
 ## Scene Setup From Scratch
