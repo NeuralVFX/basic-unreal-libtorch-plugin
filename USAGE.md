@@ -37,6 +37,8 @@
 - Open `Settings->Project` and find `GameInstanceClass`, replace this with `cDataStorageGameInstance`
 - Play the level, and you should see the Style Transfer on the `LibTorchViewer` object
 
+![](Images/project_settings.jpg)
+
 ![](Images/level.jpg)
 
 
