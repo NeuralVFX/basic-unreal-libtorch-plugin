@@ -30,13 +30,16 @@
 
 ![](Images/plugin_a.jpg)
 
-## Set GameInstance
+#### Set GameInstance
+
 
 - Open `Settings->Project` and find `GameInstanceClass`, replace this with `cDataStorageGameInstance`
 
 ![](Images/project_settings.jpg)
 
-## Run Test Scene
+## Run It
+
+#### Run Test Scene
 
 - In the Content Manager, navigate to `LibTorchPlugin Content->LibTorchTestLevel` and open this level
 - Play the level, and you should see the Style Transfer on the `LibTorchViewer` object
@@ -44,7 +47,7 @@
 ![](Images/level.jpg)
 
 
-## Scene Setup From Scratch
+#### Scene Setup From Scratch
 
 - In the Content Manager, navigate to `LibTorchPlugin C++ Classes->LibTorchPlugin->Public`
 - Click on `LibTorchViewer` and drag this into your scene file
@@ -54,27 +57,27 @@
 
 ## Classes
 
-### LibTorchViewer - Actor Class
+#### LibTorchViewer - Actor Class
 - Actor Class which displays LibTorch output as a texture
 - On every tick, this retrieves and updates texture
 - Texture is queried from `UDataStorageGameInstance`
 
-### cDataStoageWrapper - Object Class
+#### cDataStoageWrapper - Object Class
 - Wrapper for `export_wrapper.dll`
 - Finds and initiates `DLL`
 - Exposes functions of `DLL`
 
-### UDataStorageGameInstance - GameInstance Class
+#### UDataStorageGameInstance - GameInstance Class
 - This is a wrapper for `cDataStoageWrapper`
 - Manages starting and stoping `OpenCV` based on game state 
 - Retrieves `LibTorch` output, to pass on to `LibTorchViewer `
 
 ## Content
 
-### LibTorchMaterial - Material
+#### LibTorchMaterial - Material
 - A Material for displaying LibTorch output
 - Has a `Parameter` called `LibTorchInput`, used to locate the texture of this material from the `LibTorchViewer` class in C++
 - This Material is assigned by default to the `LibTorchViewer` Actor on creation
 
-### LibTorchTestLevel - Level
+#### LibTorchTestLevel - Level
 - A simple example level containing a `LibTorchViewer`
