@@ -30,30 +30,28 @@
 
 ![](Images/plugin_a.jpg)
 
+## Set GameInstance
+
+- In the Content Manager, navigate to `LibTorchPlugin C++ Classes->LibTorchPlugin->Public`
+- Open `Settings->Project` and find `GameInstanceClass`, replace this with `cDataStorageGameInstance`
+
+![](Images/project_settings.jpg)
 
 ## Run Test Scene
 
 - In the Content Manager, navigate to `LibTorchPlugin Content->LibTorchTestLevel` and open this level
-
-![](Images/level.jpg)
-
-- Open `Settings->Project` and find `GameInstanceClass`, replace this with `cDataStorageGameInstance`
 - Play the level, and you should see the Style Transfer on the `LibTorchViewer` object
 
-![](Images/project_settings.jpg)
+![](Images/level.jpg)
 
 
 ## Scene Setup From Scratch
 
 - In the Content Manager, navigate to `LibTorchPlugin C++ Classes->LibTorchPlugin->Public`
 - Click on `LibTorchViewer` and drag this into your scene file
-
-![](Images/viewer.jpg)
-
-- Open `Settings->Project` and find `GameInstanceClass`, replace this with `cDataStorageGameInstance`
 - Play the level, and you should see the Style Transfer on the `LibTorchViewer` object
 
-![](Images/project_settings.jpg)
+![](Images/viewer.jpg)
 
 ## Classes
 
