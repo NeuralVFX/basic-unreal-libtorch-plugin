@@ -32,7 +32,6 @@
 
 ## Set GameInstance
 
-- In the Content Manager, navigate to `LibTorchPlugin C++ Classes->LibTorchPlugin->Public`
 - Open `Settings->Project` and find `GameInstanceClass`, replace this with `cDataStorageGameInstance`
 
 ![](Images/project_settings.jpg)
