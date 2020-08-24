@@ -31,8 +31,7 @@
 
 #### Set GameInstance
 
-
-- Open `Settings->Project` and find `GameInstanceClass`, replace this with `cDataStorageGameInstance`
+- Open `Settings->Project Settings` and find `GameInstanceClass`, replace this with `cDataStorageGameInstance`
 
 ![](Images/project_settings.jpg)
 
