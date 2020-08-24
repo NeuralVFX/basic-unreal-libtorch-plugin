@@ -4,9 +4,8 @@
 ## Requirements:
 - Unreal Engine 4.20.3
 - Visual Studio
-- OpenCV 4.1
-- LibTorch 1.5 (CPU)
-
+- OpenCV 4.1.2
+- LibTorch 1.5.1 (CPU)
 
 ## Project Setup
 
@@ -16,7 +15,7 @@
 
 #### Compile
 - Clone this Repo into the plugins folder (Or download the zip file and unzip there)
-- Right click your `.uproject` file and click `Generate Visual Studio Project Files`
+- Right-click your `.uproject` file and click `Generate Visual Studio Project Files`
 - Compile the project from Visual Studio
 
 #### DLLs
@@ -60,7 +59,7 @@
 #### LibTorchViewer - Actor Class
 - Actor Class which displays LibTorch output as a texture
 - On every tick, this retrieves and updates texture
-- Texture is queried from `UDataStorageGameInstance`
+- The texture is queried from `UDataStorageGameInstance`
 
 #### cDataStoageWrapper - Object Class
 - Wrapper for `export_wrapper.dll`
@@ -69,7 +68,7 @@
 
 #### UDataStorageGameInstance - GameInstance Class
 - This is a wrapper for `cDataStoageWrapper`
-- Manages starting and stoping `OpenCV` based on game state 
+- Manages starting and stopping `OpenCV` based on the game state
 - Retrieves `LibTorch` output, to pass on to `LibTorchViewer `
 
 ## Content
