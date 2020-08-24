@@ -24,7 +24,7 @@
 
 #### Find Plugin
 - Open the compiled project in Unreal Engine
-- From `Edit->Plugins`, locate the `Installed` Tab
+- From `Edit->Plugins`, locate the `Other` Category
 - Find `LibTorchPlugin` and click `Enable`
 
 ![](Images/plugin_a.jpg)
