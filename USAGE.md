@@ -14,7 +14,7 @@
 - Make sure you have a `Plugins` folder inside of the project
 
 #### Compile
-- Clone this Repo into the plugins folder (Or download the zip file and unzip there)
+- Clone this Repo into the plugins folder: `git clone https://github.com/NeuralVFX/basic-unreal-libtorch-plugin.git` (Or download the zip file and unzip there)
 - Right-click your `.uproject` file and click `Generate Visual Studio Project Files`
 - Compile the project from Visual Studio
 
