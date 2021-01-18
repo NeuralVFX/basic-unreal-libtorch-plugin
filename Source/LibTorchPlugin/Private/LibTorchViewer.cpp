@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright 2020 NeuralVFX, Inc. All Rights Reserved.
 
 #include "LibTorchViewer.h"
 #include "cDataStorageGameInstance.h"
@@ -21,7 +21,6 @@ ALibTorchViewer::ALibTorchViewer()
 	// Fetch LibTorch Material From Scene
 	static ConstructorHelpers::FObjectFinder<UMaterial>MaterialAsset(TEXT("Material'/LibTorchPlugin/LibTorchMaterial.LibTorchMaterial'"));
 	PlaneMesh->SetMaterial(0, MaterialAsset.Object);
-
 }
 
 
@@ -62,6 +61,5 @@ void ALibTorchViewer::Tick(float DeltaTime)
 	PlaneMesh->SetMaterial(0, MatInst);
 
 	Super::Tick(DeltaTime);
-
 }
 

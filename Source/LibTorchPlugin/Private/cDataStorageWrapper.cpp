@@ -1,3 +1,5 @@
+// Copyright 2020 NeuralVFX, Inc. All Rights Reserved.
+
 #include "cDataStorageWrapper.h"
 #include "Paths.h"
 

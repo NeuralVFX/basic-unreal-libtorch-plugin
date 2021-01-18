@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright 2020 NeuralVFX, Inc. All Rights Reserved.
 
 #pragma once
 
@@ -14,19 +14,37 @@ class LIBTORCHPLUGIN_API UcDataStorageGameInstance : public UGameInstance
 
 private:
 
+	/** Storage for DLL object */
 	UPROPERTY()
 	class UcDataStorageWrapper* m_refDataStorageUtil;
 
+	/**
+	* Attempt to import DLL and all of its functions.
+	* @return Whether the operation is succesfull.
+	*/
 	bool ImportDataStorageLibrary();
 
 public:
 
+	/**
+	* Overridden to import DLL and DLL functions on Init.
+	*/
 	virtual void Init() override;
 
+	/**
+	* Overridden to open the camera with OpenCV.
+	*/
 	virtual void OnStart() override;
 
+	/**
+	* Overridden to close the camera with OpenCV.
+	*/
 	virtual void Shutdown() override;
 
+	/**
+	* Runs neural net on camera frame, then returns the result.
+	* @param image - Raw image pointer to return information from DLL.
+	*/
 	void GetImage(unsigned char* image);
 
 };

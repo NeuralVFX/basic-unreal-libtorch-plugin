@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright 2020 NeuralVFX, Inc. All Rights Reserved.
 
 #include "cDataStorageGameInstance.h"
 #include "cDataStorageWrapper.h"
@@ -55,7 +55,6 @@ void UcDataStorageGameInstance::OnStart()
 	m_refDataStorageUtil->CallInitCV();
 	UE_LOG(LogTemp, Log, TEXT("Opened Camera"));
 	Super::OnStart();
-
 }
 
 
