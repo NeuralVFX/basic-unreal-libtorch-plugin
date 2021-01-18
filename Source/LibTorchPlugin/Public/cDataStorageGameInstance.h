@@ -6,9 +6,7 @@
 #include "Engine/GameInstance.h"
 #include "cDataStorageGameInstance.generated.h"
 
-/**
- *
- */
+/** Game Instance which is responsible for loading and calling DLL wrapper */
 UCLASS()
 class LIBTORCHPLUGIN_API UcDataStorageGameInstance : public UGameInstance
 {

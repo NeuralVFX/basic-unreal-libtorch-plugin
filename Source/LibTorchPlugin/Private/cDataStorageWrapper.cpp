@@ -46,41 +46,36 @@ bool UcDataStorageWrapper::ImportMethods()
 }
 
 
-int UcDataStorageWrapper::CallInitCV()
+void UcDataStorageWrapper::CallInitCV()
 {
 	// Calls DLL Function to Activate Camera
 	if (m_funcInitCV == NULL)
 	{
 		UE_LOG(LogTemp, Error, TEXT("Function Not Loaded From DLL: InitNet"));
-		return INT_MIN;
 	}
 	bool init = m_funcInitCV();
 	UE_LOG(LogTemp, Error, TEXT("OpenCV Connection Opened %s"), init ? "true" : "false");
-	return 1;
 }
 
 
-int UcDataStorageWrapper::CallCloseCV()
+void UcDataStorageWrapper::CallCloseCV()
 {
 	// Calls DLL Function to ShutDown Camera
 	if (m_funcCloseCV == NULL)
 	{
 		UE_LOG(LogTemp, Error, TEXT("Function Not Loaded From DLL: CloseNet"));
-		return INT_MIN;
 	}
 	m_funcCloseCV();
 	UE_LOG(LogTemp, Error, TEXT("OpenCV Connection Close"));
-	return 1;
 }
 
 
-int UcDataStorageWrapper::CallGetImageCV(unsigned char* Image)
+void UcDataStorageWrapper::CallGetImageCV(unsigned char* Image)
 {
 	// Calls DLL Function to Run LibTorch Model and Return Image
 	if (m_funcGetImageCV == NULL)
 	{
 		UE_LOG(LogTemp, Error, TEXT("Function Not Loaded From DLL: Get Image "));
-		return INT_MIN;
 	}
 
 	bool GetImage = m_funcGetImageCV(Image);
@@ -88,7 +83,5 @@ int UcDataStorageWrapper::CallGetImageCV(unsigned char* Image)
 	if (GetImage == false)
 	{
 		UE_LOG(LogTemp, Error, TEXT("OpenCV Image Could Not Be Loaded"));
-
 	}
-	return 1;
 }
