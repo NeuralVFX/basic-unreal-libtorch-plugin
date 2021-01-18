@@ -53,7 +53,7 @@ public:
 	void CallCloseCV();
 
 	/**
-	* Runs nueral net on camera frame, then returns the result.
+	* Runs neural net on camera frame, then returns the result.
 	* @param image - Raw image pointer to return information from DLL.
 	*/
 	void CallGetImageCV(unsigned char* image);
