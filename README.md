@@ -1,4 +1,4 @@
-![](https://github.com/NeuralVFX/basic-libtorch-dll/blob/master/example.png)
+![](https://github.com/NeuralVFX/basic-libtorch-dll/blob/master/style.gif)
 # Basic-Unreal-Libtorch-Plugin
 
 A `"Hello World"` for running `LibTorch` inside `Unreal Engine`.
